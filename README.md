@@ -3,12 +3,12 @@
 
 ### Basic Usage
 
-Ejecutar el index.html
+Ejecutar el index.html o ejecutar gulp
 
 ### Advanced Usage
 
-Debe tener npm y gulp instalado ejecutar
-npm install  --save-dev browser-sync
+Debe tener npm y gulp instalado ejecutar:<br/>
+npm install--save-dev browser-sync <br/>
 gulp dev
 
 ## About
