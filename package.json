@@ -1,0 +1,21 @@
+{
+  "title": "alumnica",
+  "name": "Portal Alumnica",
+  "version": "1.0",
+  "description": "landing page alumnica with Bootstrap",  
+  "homepage": "https://wwww.alumnica.org",
+  "license": "GPL",
+  "author": "Alumnica ORG",
+  "contributors": [
+    "Abraham Mtz (https://www.linkedin.com/in/amrz1985/)"
+  ],
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "jquery": "3.3.1",
+    "jquery.easing": "^1.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  }
+}

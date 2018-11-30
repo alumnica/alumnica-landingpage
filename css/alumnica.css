@@ -1,0 +1,52 @@
+/*header {
+  padding: 154px 0 100px;
+}*/
+
+/*@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}*/
+
+/*@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}*/
+
+body {
+    font-family: 'Nunito', sans-serif;    
+}
+
+/*.alumnica-container{
+    width:1200px;
+}*/
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+
+section {
+    padding: 150px 0;
+}
+
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
+
