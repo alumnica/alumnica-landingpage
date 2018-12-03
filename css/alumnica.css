@@ -15,7 +15,7 @@
 }*/
 
 body {
-    font-family: 'Nunito', sans-serif;    
+    font-family: 'Nunito', sans-serif;
 }
 
 /*.alumnica-container{
@@ -49,4 +49,51 @@ section {
     }
 }
 
+/* ----FOOTER---- */
+.footer-brand img {
+  height: 50px;
+  width: auto;
+}
 
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-brand {
+  margin: 20px 0;
+}
+
+.footer-nav {
+  margin: 20px 0;
+}
+
+/* Social Links */
+.social-footer-btn i {
+  color: white;
+  font-size: 1.2rem;
+}
+.social-footer-btn {
+  background-color: #000;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  margin: 0 10px;
+}
+.social-footer-btn:hover {
+  background-color: #464646;
+}
+
+/* CopyRigth */
+.footer-line {
+  color: #757575;
+  opacity: 0.8;
+}
+.acento-footer{
+  height: 1.2rem;
+  width: auto;
+}
+.copy-rigth>a, .copy-rigth>p, .copy-rigth>img{
+  font-size: 0.8rem;
+  color: #757575;
+  display: inline-block;
+}
