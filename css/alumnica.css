@@ -49,6 +49,11 @@ section {
     }
 }
 
+/* ----HEADER---- */
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
 /* ----FOOTER---- */
 .footer-brand img {
   height: 50px;
