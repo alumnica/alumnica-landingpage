@@ -27,27 +27,29 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-white bg-white  fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-md navbar-bg fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger text-dark" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <img src="/img/alumnica_negro.png" alt="Alúmnica">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler hamburger hamburger--collapse" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto text-center">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-dark" href="#about">Acerca</a>
+              <a class="nav-link js-scroll-trigger"href="#about">Acerca</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-dark" href="#services">Servicios</a>
+              <a class="nav-link js-scroll-trigger" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-dark" href="#soluciones">Soluciones</a>
+              <a class="nav-link js-scroll-trigger" href="#soluciones">Soluciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-dark" href="#contact">Contacto</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
@@ -55,35 +57,41 @@
     </nav>
 
 
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
+  <header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
   <div class="carousel-inner" role="listbox">
-    <!-- Slide One - Set the background image for this slide in the line below -->
-    <div class="carousel-item active first-img-carousel-header">
-      <div class="carousel-caption d-none d-md-block">
-        <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
-        <p>APRENDIZAJE SITUADO</p>
+    <!-- Slide One -->
+      <div class="carousel-item active first-img-carousel-header">
+        <div class="carousel-caption d-none d-md-block">
+          <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
+          <p>APRENDIZAJE SITUADO</p>
+          <button type="button" href="#situado" class="btn">Ver más</button>
+        </div>
       </div>
-    </div>
-    <!-- Slide Two - Set the background image for this slide in the line below -->
-    <div class="carousel-item second-img-carousel-header">
-      <div class="carousel-caption d-none d-md-block">
-        <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
-        <p>APRENDIZAJE ADAPTATIVO</p>
+
+    <!-- Slide Two -->
+      <div class="carousel-item second-img-carousel-header">
+        <div class="carousel-caption d-none d-md-block">
+          <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
+          <p>APRENDIZAJE ADAPTATIVO</p>
+          <button type="button" href="#adaptativo" class="btn">Ver más</button>
+        </div>
       </div>
-    </div>
-    <!-- Slide Three - Set the background image for this slide in the line below -->
-    <div class="carousel-item third-img-carousel-header">
-      <div class="carousel-caption d-none d-md-block">
-        <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
-        <p>APRENDIZAJE ACTIVO</p>
+
+    <!-- Slide Three -->
+      <div class="carousel-item third-img-carousel-header">
+        <div class="carousel-caption d-none d-md-block">
+          <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
+          <p>APRENDIZAJE ACTIVO</p>
+          <button type="button" href="#activo" class="btn">Ver más</button>
+        </div>
       </div>
-    </div>
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -118,9 +126,17 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto">
-            <h2>Alúmnica</h2>
-            <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features</p>
+          <div class="col-12">
+            <img class="carousel-header-logo d-block mx-auto" src="/img/alumnica_negro.png" alt="Alúmnica">
+          </div>
+          <div class="col-12">
+            <p>
+              Alúmnica es un sistema didáctico para la educación incluyente. Parte del entendimiento de que, para aprender, cada quien tiene procedimientos, mecanismos y necesidades diferentes. Por ello, debemos proporcionarles a los alumnos un ambiente integral y diverso para que todos tengan las mismas oportunidades de aprender. El trabajo de Alúmnica se divide en dos: por un lado, busca el desarrollo de materiales educativos digitales que aborden de forma situada los temas del plan de estudios de educación media superior; es decir, con ejemplos, realidades y necesidades de la vida cotidiana de los alumnos. Esto representa un proceso propedéutico, ya que se alimenta de situaciones que refieren a los diferentes campos laborales. Por otro lado, se trata de una solución educativa para que las escuelas puedan incorporar este sistema a su modelo educativo con la finalidad de lograr la inclusión. Esta solución incluye talleres vivenciales, sesiones de trabajo, asesorías y un proceso de evaluación dirigido a los profesores, alumnos y encargados de la gestión educativa de todos los niveles educativos.
+            </p>
+          </div>
+          <div class="col-12">
+            <p>
+En Alúmnica creemos en la libertad de ser y aprender diferente. También creemos que la educación debería adaptarse a nuestras capacidades y habilidades (diferentes para cada persona) y no viceversa. Es por eso que hemos diseñado talleres y asesorías concebidos para fomentar una relación positiva entre el alumno y la escuela a través del aprendizaje personalizado. Estos servicios provienen de nuestro sistema didáctico único, que toma en cuenta los estilos de aprendizaje definidos por el teórico educativo David A. Kolb. Después de un análisis minucioso de los estilos de aprendizaje de los estudiantes y del ambiente tecnopedagógico de la escuela, proporcionamos una secuencia de capacitaciones que apuntan a la creación de un ambiente de aprendizaje inclusivo. Después de completar las tres fases de nuestro sistema, tanto la escuela como sus profesores individualmente pueden aspirar a la Acreditación de Escuela/Maestro Incluyente, que completa la cuarta fase.            </p>
           </div>
         </div>
       </div>
@@ -140,38 +156,44 @@
      <!-- Image Showcases -->
     <section id="services" class="showcase">
       <div class="container"> <!--div class="container-fluid p-0"-->
-        <div class="row">
-
-          <div class="col-12 col-md-6 order-lg-2 img-fluid" style="background-image: url('img/a_activo.png');"></div>
-          <div class="col-12 col-md-6order-lg-1 my-auto showcase-text">
-            <h2>Fully Responsive Design</h2>
-            <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 order-1 img-fluid showcase-img">
+            <img src="/img/a_activo.png" alt="Aprendizaje Activo" class="img-fluid">
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/a_adaptativo.png');"></div>
-          <div class="col-lg-6 my-auto showcase-text">
+          <div class="col-md-7 order-12 showcase-text">
             <h2>Updated For Bootstrap 4</h2>
-            <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            <p class="text-left">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/a_inclusivo.png');"></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Easy to Use &amp; Customize</h2>
-            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 img-fluid order-md-12 showcase-img">
+            <img src="/img/a_situado.png" alt="Aprendizaje Situado" class="img-fluid">
+          </div>
+          <div class="col-md-7 order-md-1 showcase-text">
+            <h2 class="text-md-right">Updated For Bootstrap 4</h2>
+            <p class="text-md-right">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/a_situado.png');"></div>
-          <div class="col-lg-6 my-auto showcase-text">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 img-fluid order-1 showcase-img">
+            <img src="/img/a_adaptativo.png" alt="Aprendizaje Adaptativo" class="img-fluid">
+          </div>
+          <div class="col-md-7 order-12 showcase-text">
             <h2>Updated For Bootstrap 4</h2>
-            <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            <p class="text-left">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 img-fluid order-md-12 showcase-img">
+            <img src="/img/a_inclusivo.png" alt="Aprendizaje Inclusivo" class="img-fluid">
+          </div>
+          <div class="col-md-7 order-md-1 showcase-text">
+            <h2 class="text-md-right">Updated For Bootstrap 4</h2>
+            <p class="text-md-right">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
           </div>
         </div>
       </div>
     </section>
-
 
     <section id="soluciones">
       <div id="carouselFooter" class="carousel slide" data-ride="carousel">

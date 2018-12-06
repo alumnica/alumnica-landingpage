@@ -25,5 +25,9 @@
     target: '#mainNav',
     offset: 54
   });
-
+  //Hamburger toggle
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+  });
 })(jQuery); // End of use strict
