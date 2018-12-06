@@ -10,6 +10,19 @@
 
     <title>Alúmnica</title>
 
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/img/icons/site.webmanifest">
+    <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#33cc33">
+    <link rel="shortcut icon" href="/img/icons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Al&uacute;mnica">
+    <meta name="application-name" content="Al&uacute;mnica">
+    <meta name="msapplication-TileColor" content="#33cc33">
+    <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap core CSS -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -68,27 +81,24 @@
     <!-- Slide One -->
       <div class="carousel-item active first-img-carousel-header">
         <div class="carousel-caption d-none d-md-block">
-          <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
           <p>APRENDIZAJE SITUADO</p>
-          <button type="button" href="#situado" class="btn">Ver más</button>
+          <a href="#a_situado" class="btn btn-dark" role="button" >Ver más</a>
         </div>
       </div>
 
     <!-- Slide Two -->
       <div class="carousel-item second-img-carousel-header">
         <div class="carousel-caption d-none d-md-block">
-          <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
           <p>APRENDIZAJE ADAPTATIVO</p>
-          <button type="button" href="#adaptativo" class="btn">Ver más</button>
+          <a href="#a_adaptativo" class="btn btn-dark" role="button" >Ver más</a>
         </div>
       </div>
 
     <!-- Slide Three -->
       <div class="carousel-item third-img-carousel-header">
         <div class="carousel-caption d-none d-md-block">
-          <img class="carousel-header-logo" src="/img/alumnica_negro.png" alt="Alúmnica">
           <p>APRENDIZAJE ACTIVO</p>
-          <button type="button" href="#activo" class="btn">Ver más</button>
+            <a href="#a_activo" class="btn btn-dark" role="button" >Ver más</a>
         </div>
       </div>
 
@@ -154,35 +164,41 @@ En Alúmnica creemos en la libertad de ser y aprender diferente. También creemo
     </section>-->
 
      <!-- Image Showcases -->
-    <section id="services" class="showcase">
       <div class="container"> <!--div class="container-fluid p-0"-->
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 order-1 img-fluid showcase-img">
-            <img src="/img/a_activo.png" alt="Aprendizaje Activo" class="img-fluid">
+        <section id="a_activo">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 order-1 img-fluid showcase-img">
+              <img src="/img/a_activo.png" alt="Aprendizaje Activo" class="img-fluid">
+            </div>
+            <div class="col-md-7 order-12 showcase-text">
+              <h2>Updated For Bootstrap 4</h2>
+              <p class="text-left">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            </div>
           </div>
-          <div class="col-md-7 order-12 showcase-text">
-            <h2>Updated For Bootstrap 4</h2>
-            <p class="text-left">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+        </section>
+        <section id="a_situado">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 img-fluid order-md-12 showcase-img">
+              <img src="/img/a_situado.png" alt="Aprendizaje Situado" class="img-fluid">
+            </div>
+            <div class="col-md-7 order-md-1 showcase-text">
+              <h2 class="text-md-right">Updated For Bootstrap 4</h2>
+              <p class="text-md-right">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            </div>
           </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 img-fluid order-md-12 showcase-img">
-            <img src="/img/a_situado.png" alt="Aprendizaje Situado" class="img-fluid">
-          </div>
-          <div class="col-md-7 order-md-1 showcase-text">
-            <h2 class="text-md-right">Updated For Bootstrap 4</h2>
-            <p class="text-md-right">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 img-fluid order-1 showcase-img">
-            <img src="/img/a_adaptativo.png" alt="Aprendizaje Adaptativo" class="img-fluid">
-          </div>
-          <div class="col-md-7 order-12 showcase-text">
-            <h2>Updated For Bootstrap 4</h2>
-            <p class="text-left">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
-          </div>
-        </div>
+        </section>
+        <section id="a_adaptativo">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 img-fluid order-1 showcase-img">
+              <img src="/img/a_adaptativo.png" alt="Aprendizaje Adaptativo" class="img-fluid">
+            </div>
+            <div class="col-md-7 order-12 showcase-text">
+              <h2>Updated For Bootstrap 4</h2>
+              <p class="text-left">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            </div>
+          </div>  
+        </section>
+
         <div class="row align-items-center">
           <div class="col-12 col-md-5 img-fluid order-md-12 showcase-img">
             <img src="/img/a_inclusivo.png" alt="Aprendizaje Inclusivo" class="img-fluid">
@@ -193,7 +209,6 @@ En Alúmnica creemos en la libertad de ser y aprender diferente. También creemo
           </div>
         </div>
       </div>
-    </section>
 
     <section id="soluciones">
       <div id="carouselFooter" class="carousel slide" data-ride="carousel">
