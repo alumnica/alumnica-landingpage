@@ -31,3 +31,18 @@
     $hamburger.toggleClass("is-active");
   });
 })(jQuery); // End of use strict
+
+
+
+
+function sendMail(){
+  console.log("antes")
+  Email.send("abraham@fundacionmanuelmoreno.org",
+  "karazu20@gmail.com",
+  "Prueba landing",
+  "Contactame",
+  "smtp.gmail.com",
+  "abraham@fundacionmanuelmoreno.org",
+  "P4$$w0rd");
+  console.log("enviado 2")
+}
