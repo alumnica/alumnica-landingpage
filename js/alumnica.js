@@ -33,9 +33,7 @@
 })(jQuery); // End of use strict
 
 
- (function(){
-    emailjs.init("user_9O5CQmZYnKkaVUev27Hae");
- })();
+ 
 
 
 function sendMail(){  
