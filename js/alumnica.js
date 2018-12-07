@@ -33,10 +33,6 @@
 })(jQuery); // End of use strict
 
 
-
- id="send-email".
-
-
  (function(){
     emailjs.init("user_9O5CQmZYnKkaVUev27Hae");
  })();
