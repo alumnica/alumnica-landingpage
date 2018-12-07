@@ -53,13 +53,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto text-center">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Acerca</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#about">Acerca</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#soluciones">Soluciones</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#soluciones">Soluciones</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
@@ -69,33 +69,32 @@
       </div>
     </nav>
 
-    <!-- Fases Servicios -->
-    <section id="services" class="showcase">
+    <!-- Contact form -->
+    <section id="contact" class="showcase">
      
-
     <div class="container bg-light py-3">
-        <form id="contact-form" method="post" role="form">
+        <form id="contact-form"  role="form">
             <div class="messages"></div>
             <div class="controls">
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="form_name">Nombre *</label>
-                            <input id="form_name" type="text" name="surname" class="form-control" placeholder="Por vafor ingrese su nombre  *" required="required" data-error="name is required.">
+                            <label for="name">Nombre *</label>
+                            <input id="name" type="text" name="name" class="form-control" placeholder="Por vafor ingrese su nombre  *" required="required" data-error="name is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Por vafor ingrese su  email *" required="required" data-error="Valid email is required.">
+                            <label for="email">Email *</label>
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Por vafor ingrese su  email *" required="required" data-error="Valid email is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="form_phone">Teléfono</label>
-                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Por vafor ingrese su # de teléfono">
+                            <label for="phone">Teléfono</label>
+                            <input id="phone" type="tel" name="phone" class="form-control" placeholder="Por vafor ingrese su # de teléfono">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -106,13 +105,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="form_message">Mensaje *</label>
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Escriba su mensaje *" rows="4" required="required" data-error="send a message."></textarea>
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Escriba su mensaje *" rows="4" required="required" data-error="send a message."></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-warning btn-send" value="Envíar">
+                    <button type="button"  class="btn btn-success btn-send"  onclick="sendMail()">Envíar</button>
+                    <!--<input type="submit" class="btn btn-success btn-send" onclick="sendMail()" value="Envíar">-->
                 </div>
             </div>
             <div class="row">
@@ -194,6 +194,7 @@
     <!-- Plugin JavaScript -->
     <script src="assets/jquery-easing/jquery.easing.min.js"></script>
 
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <!-- Custom JavaScript for portal -->
     <script src="js/alumnica.js"></script>
 

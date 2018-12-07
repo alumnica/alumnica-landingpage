@@ -35,14 +35,19 @@
 
 
 
-function sendMail(){
-  console.log("antes")
-  Email.send("abraham@fundacionmanuelmoreno.org",
-  "karazu20@gmail.com",
-  "Prueba landing",
-  "Contactame",
-  "smtp.gmail.com",
-  "abraham@fundacionmanuelmoreno.org",
-  "P4$$w0rd");
-  console.log("enviado 2")
+
+
+ (function(){
+    emailjs.init("user_9O5CQmZYnKkaVUev27Hae");
+ })();
+
+
+function sendMail(){  
+ emailjs.sendForm('gmail', 'template_8r4l7Oi1', '#contact-form')
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+
 }
