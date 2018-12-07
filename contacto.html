@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <button type="button"  class="btn btn-success btn-send"  onclick="sendMail()">Envíar</button>
+                    <button type="button"  class="btn btn-success btn-send" data-toggle="modal" data-target="#thanks"  onclick="sendMail()">Envíar</button>
                     <!--<input type="submit" class="btn btn-success btn-send" onclick="sendMail()" value="Envíar">-->
                 </div>
             </div>
@@ -121,6 +121,26 @@
                 </div>
             </div>
         </form>
+
+      <!-- Modal -->
+        <div class="modal fade" id="thanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¡Gracias por escribirnos!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Estaremos atendiendo tus mensajes
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>                
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
        
@@ -180,7 +200,7 @@
 
       <div class="row justify-content-center">
         <div class="copy-rigth align-middle">
-              <a rel="noopener noreferrer" target="_blank" href="/">Aviso de Privacidad</a>
+              <a rel="noopener noreferrer" target="_blank" href="docs/Aviso Privacidad Integral v 01-1 - Interesados.pdf">Aviso de Privacidad</a>
               <img class="acento-footer" src="img/acento_gris.svg" alt="imagotipo">
               <p>&#169; Alúmnica</p>
         </div>

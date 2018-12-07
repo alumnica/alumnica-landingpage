@@ -34,7 +34,7 @@
 
 
 
-
+ id="send-email".
 
 
  (function(){
@@ -49,5 +49,7 @@ function sendMail(){
     }, function(error) {
        console.log('FAILED...', error);
     });
+
+    //console.log ("Gracias por escribirnos")
 
 }
