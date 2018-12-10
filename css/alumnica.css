@@ -41,7 +41,7 @@ section {
   margin: 20px 0;
 }
 /* SERVICIOS */
-.align-items-center .row
+
 /* Images Servicios */
 .servicios-img {
   width: auto;
@@ -73,9 +73,12 @@ section {
 .third-img-carousel-header{
   background-image: url("/img/head3.png");
 }
-.carousel-caption > p {
+.carousel-caption > div > p {
   color: #000000;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+.carousel-caption > div > h3 {
+  color: #000000;
 }
 .carousel-header-logo{
   height: 80px;
