@@ -41,7 +41,12 @@ section {
   margin: 20px 0;
 }
 /* SERVICIOS */
-
+div.services{
+  margin-top: 10px;
+}
+.titulo>h1{
+  margin: 40px 0;
+}
 /* Images Servicios */
 .servicios-img {
   width: auto;
