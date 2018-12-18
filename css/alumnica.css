@@ -40,21 +40,21 @@ section {
 .showcase .row {
   margin: 20px 0;
 }
-/* SERVICIOS */
+/* ----------------------------SERVICIOS */
 div.services{
   margin-top: 10px;
 }
 .titulo>h1{
   margin: 40px 0;
 }
-/* Images Servicios */
-.servicios-img {
-  width: auto;
+/* Img Servicios */
+img.servicios {
+  max-width: 100%;
   height: auto;
 }
+/* Listas Servicios */
 .showcase-text ul li{
   margin: 1.2rem 0;
-  style: none;
   color: #0099CC;
   font-size: 1.2rem;
   font-weight: 500;
@@ -62,10 +62,11 @@ div.services{
 .services-bullet{
   display: inline-block;
   width: auto;
-  height: 2.3rem;
+  height: 2.1rem;
   vertical-align: middle;
   padding: .2rem .4rem .5rem .2rem;
 }
+/* -----------------------------------------LANDING */
 /* Carousel-Landing-Top */
 .carousel-item {
   height: 100vh;
