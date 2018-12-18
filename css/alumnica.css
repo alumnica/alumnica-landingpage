@@ -59,6 +59,13 @@ div.services{
   font-size: 1.2rem;
   font-weight: 500;
 }
+.services-bullet{
+  display: inline-block;
+  width: auto;
+  height: 2.3rem;
+  vertical-align: middle;
+  padding: .2rem .4rem .5rem .2rem;
+}
 /* Carousel-Landing-Top */
 .carousel-item {
   height: 100vh;
