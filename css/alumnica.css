@@ -1,46 +1,70 @@
-/*header {
-  padding: 154px 0 100px;
-}*/
-
-/*@media (min-width: 992px) {
-  header {
-    padding: 156px 0 100px;
-  }
-}*/
-
-/*@media (min-width: 1200px) {
-    .container{
-        max-width: 970px;
-    }
-}*/
-
+/* ---------------------------------------------- GENERAL */
 body {
     font-family: 'Nunito', sans-serif;
 }
-
-/*.alumnica-container{
-    width:1200px;
-}*/
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
 }
-
-section {
-  padding: 50px 0;
+/* ----------------------------------------- LANDING */
+.aprendizaje {
+  margin: 10px 0;
 }
 
-.showcase .showcase-img {
-  height: 100%;
+.showcase-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inclusivo img {
+  max-width: 80%;
+  height: auto;
+}
+
+.body-logo{
+  height: 80px;
   width: auto;
+  margin: 50px 0;
 }
 
-.showcase .row {
-  margin: 20px 0;
+.acerca{
+  margin-bottom: 50px;
 }
-/* ----------------------------SERVICIOS */
+
+/* Carousel-Landing-Top */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.first-img-carousel-header{
+  background-image: url("/img/head1.png");
+}
+.second-img-carousel-header{
+  background-image: url("/img/head2.png");
+}
+.third-img-carousel-header{
+  background-image: url("/img/head3.png");
+}
+.carousel-caption > div > p {
+  color: #000000;
+  font-size: 1.2rem;
+}
+.carousel-caption > div > h3 {
+  color: #000000;
+}
+
+/* .carousel-control-next-icon {
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+} */
+
+/* ----------------------------------------- SERVICIOS */
 div.services{
   margin-top: 10px;
 }
@@ -79,113 +103,26 @@ img.servicios {
   vertical-align: middle;
   padding: .2rem .4rem .5rem .2rem;
 }
-/* -----------------------------------------LANDING */
-/* Carousel-Landing-Top */
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.first-img-carousel-header{
-  background-image: url("/img/head1.png");
-}
-.second-img-carousel-header{
-  background-image: url("/img/head2.png");
-}
-.third-img-carousel-header{
-  background-image: url("/img/head3.png");
-}
-.carousel-caption > div > p {
-  color: #000000;
-  font-size: 1.2rem;
-}
-.carousel-caption > div > h3 {
-  color: #000000;
-}
-.carousel-header-logo{
-  height: 80px;
-  width: auto;
-}
-/* .carousel-control-next-icon {
-    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
-} */
 
 /* ----HEADER---- */
 .navbar-brand img {
   height: 40px;
   width: auto;
 }
-/* ----FOOTER---- */
-.footer-brand img {
-  height: 50px;
-  width: auto;
-}
 
-.footer-social {
-  margin: 20px 0;
-}
-
-.footer-brand {
-  margin: 20px 0;
-}
-
-.footer-nav {
-  margin: 20px 0;
-}
-/* HEADER */
 .navbar-bg{
   background-color: #ffffff;
 }
+
 .navbar-toggler-icon{
   color: #000000;
 }
+
 .navbar-toggler:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
   box-shadow: none;
   outline-width: 0;
-}
-/* NAVLINKS */
-.nav-item a {
-  color: #000000;
-}
-
-.nav-item a:hover {
-  color: #757575;
-}
-/* Social Links */
-.social-footer-btn i {
-  color: #ffffff;
-  font-size: 1.2rem;
-}
-.social-footer-btn {
-  background-color: #000;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 1.25rem;
-  margin: 0 10px;
-}
-.social-footer-btn:hover {
-  background-color: #757575;
-}
-
-/* CopyRigth */
-.footer-line {
-  color: #757575;
-  opacity: 0.8;
-}
-.acento-footer{
-  height: 1.2rem;
-  width: auto;
-}
-.copy-rigth>a, .copy-rigth>p, .copy-rigth>img{
-  font-size: 0.8rem;
-  color: #757575;
-  display: inline-block;
 }
 /*!
  * Hamburgers
@@ -273,7 +210,7 @@ img.servicios {
     transform: rotate(-90deg);
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-/* //-------------------------------------------------------- Cambios a Hamburgers */
+/* Cambios a Hamburgers */
 .hamburger:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
@@ -309,4 +246,64 @@ img.servicios {
     /* //change size */
 .hamburger{
   transform: scale(0.7);
+}
+
+/* ----FOOTER---- */
+.footer{
+  margin-top: 150px;
+}
+.footer-brand img {
+  height: 50px;
+  width: auto;
+}
+
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-brand {
+  margin: 20px 0;
+}
+
+.footer-nav {
+  margin: 20px 0;
+}
+
+/* NAVLINKS */
+.nav-item a {
+  color: #000000;
+}
+
+.nav-item a:hover {
+  color: #757575;
+}
+/* Social Links */
+.social-footer-btn i {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.social-footer-btn {
+  background-color: #000;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  margin: 0 10px;
+}
+.social-footer-btn:hover {
+  background-color: #757575;
+}
+
+/* CopyRigth */
+.footer-line {
+  color: #757575;
+  opacity: 0.8;
+}
+.acento-footer{
+  height: 1.2rem;
+  width: auto;
+}
+.copy-rigth>a, .copy-rigth>p, .copy-rigth>img{
+  font-size: 0.8rem;
+  color: #757575;
+  display: inline-block;
 }
