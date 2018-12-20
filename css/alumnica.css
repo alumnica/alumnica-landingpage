@@ -49,15 +49,28 @@ div.services{
 }
 /* Img Servicios */
 img.servicios {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
+
+@media (min-width: 1200px) {
+  img.servicios {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
 /* Listas Servicios */
 .showcase-text ul li{
   margin: 1.2rem 0;
   color: #0099CC;
   font-size: 1.2rem;
   font-weight: 500;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .showcase-text ul li{
+    font-size: 0.9rem;
+  }
 }
 .services-bullet{
   display: inline-block;
