@@ -2,7 +2,9 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
-
+.content{
+  padding-top: 66px;
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -35,7 +37,7 @@ body {
 
 /* Carousel-Landing-Top */
 .carousel-item {
-  height: 100vh;
+  height: calc(100vh - 66px);
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
