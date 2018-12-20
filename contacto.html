@@ -70,78 +70,90 @@
     </nav>
 
     <!-- Contact form -->
-    <section id="contact" class="showcase">
-
-    <div class="container bg-light py-3">
-        <form id="contact-form"  role="form">
-            <div class="messages"></div>
-            <div class="controls">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="name">Nombre *</label>
-                            <input id="name" type="text" name="name" class="form-control" placeholder="Por favor ingrese su nombre  *" required="required" data-error="name is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input id="email" type="email" name="email" class="form-control" placeholder="Por favor ingrese su  email *" required="required" data-error="Valid email is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="phone">Teléfono</label>
-                            <input id="phone" type="tel" name="phone" class="form-control" placeholder="Por favor ingrese su # de teléfono">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="message">Mensaje *</label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Escriba su mensaje *" rows="4" required="required" data-error="send a message."></textarea>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <button type="button"  class="btn btn-success btn-send" data-toggle="modal" data-target="#thanks"  onclick="sendMail()">Enviar</button>
-                    <!--<input type="submit" class="btn btn-success btn-send" onclick="sendMail()" value="Envíar">-->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-muted"><strong>*</strong> Datos requeridos.</p>
-                </div>
-            </div>
-        </form>
-
-      <!-- Modal -->
-        <div class="modal fade" id="thanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¡Gracias por escribirnos!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Estaremos atendiendo tus mensajes
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
+    <section id="contact" class="showcase content">
+      <div class="container">
+        <div class="col-12 titulo">
+          <h1 class="text-center">Contáctanos</h1>
         </div>
-    </div>
+        <div class="col-12">
+          <h4 class="text-center">
+            ¡Gracias por tu interes en nosotros!
+          </h4>
+          <h4 class="text-center d-none d-sm-block">
+            Estamos contentos en contestar cualquiera de tus dudas.
+          </h4>
+        </div>
+        <div class="my-5">
+            <form id="contact-form"  role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="name">Nombre *</label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Por favor ingrese su nombre  *" required="required" data-error="name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input id="email" type="email" name="email" class="form-control" placeholder="Por favor ingrese su  email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Por favor ingrese su # de teléfono">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Escriba su mensaje *" rows="4" required="required" data-error="send a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="button"  class="btn btn-success btn-send" data-toggle="modal" data-target="#thanks"  onclick="sendMail()">Enviar</button>
+                        <!--<input type="submit" class="btn btn-success btn-send" onclick="sendMail()" value="Envíar">-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted"><strong>*</strong> Datos requeridos.</p>
+                    </div>
+                </div>
+            </form>
+
+          <!-- Modal -->
+            <div class="modal fade" id="thanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¡Gracias por escribirnos!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Estaremos atendiendo tus mensajes
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
 
 
 
