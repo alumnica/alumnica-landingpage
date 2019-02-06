@@ -47,3 +47,11 @@ function sendMail(){
     //console.log ("Gracias por escribirnos")
 
 }
+
+ 
+        
+$(function(){
+  $("#navbar").load("nav_bar.htm"); 
+  $("#footer").load("footer.htm"); 
+});
+
