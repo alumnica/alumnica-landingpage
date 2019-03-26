@@ -37,7 +37,7 @@
 
 
 function sendMail(){  
- emailjs.sendForm('gmail', 'template_8r4l7Oi1', '#contact-form')
+ emailjs.sendForm('gmail', 'template_sJc33IhK', '#contact-form')
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
