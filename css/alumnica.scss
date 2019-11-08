@@ -1,4 +1,16 @@
-/* ----------------------------------------------  */
+//Hamburger
+$hamburger-padding-x           : 15px;
+$hamburger-padding-y           : 15px;
+$hamburger-layer-width         : 30px;
+$hamburger-layer-height        : 3px;
+$hamburger-layer-spacing       : 4px;
+$hamburger-layer-color         : #000;
+$hamburger-layer-border-radius : 6px;
+$hamburger-hover-opacity       : 1;
+$hamburger-active-layer-color  : #ff3f74;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
 //Bootstrap Imports for Mixings
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -413,8 +425,9 @@ div.services {
   margin-top: 10px;
 }
 
-.titulo > h1 {
-  margin: 40px 0;
+.talleres {
+  @include media-breakpoint-down(xs){h1{font-size: $font-size-base * 2}}
+
 }
 /* Img Servicios */
 img.servicios {
@@ -524,158 +537,4 @@ img.servicios {
 
 p.point8em {
   font-size: 0.65em;
-}
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
-.hamburger {
-  padding: 15px 0;
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible;
-}
-
-.hamburger:hover {
-  opacity: 0.7;
-}
-
-.hamburger.is-active:hover {
-  opacity: 0.7;
-}
-
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::after,
-.hamburger.is-active .hamburger-inner::before {
-  background-color: red;
-}
-
-.hamburger-box {
-  width: 40px;
-  height: 24px;
-  display: inline-block;
-  position: relative;
-}
-
-.hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px;
-}
-
-.hamburger-inner,
-.hamburger-inner::after,
-.hamburger-inner::before {
-  width: 40px;
-  height: 4px;
-  background-color: #000;
-  border-radius: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
-}
-
-.hamburger-inner::after,
-.hamburger-inner::before {
-  content: "";
-  display: block;
-}
-
-.hamburger-inner::before {
-  top: -10px;
-}
-
-.hamburger-inner::after {
-  bottom: -10px;
-}
-/*
-   * Collapse
-   */
-.hamburger--collapse .hamburger-inner {
-  top: auto;
-  bottom: 0;
-  transition-duration: 0.13s;
-  transition-delay: 0.13s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.hamburger--collapse .hamburger-inner::after {
-  top: -20px;
-  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
-}
-
-.hamburger--collapse .hamburger-inner::before {
-  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.hamburger--collapse.is-active .hamburger-inner {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
-  transition-delay: 0.22s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.hamburger--collapse.is-active .hamburger-inner::after {
-  top: 0;
-  opacity: 0;
-  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
-}
-
-.hamburger--collapse.is-active .hamburger-inner::before {
-  top: 0;
-  transform: rotate(-90deg);
-  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-/* Cambios a Hamburgers */
-.hamburger:focus {
-  border-color: inherit;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline-width: 0;
-}
-/* // overrides default colors
-    // active */
-.hamburger-inner {
-  background-color: #000000;
-}
-
-.hamburger-inner:before {
-  background-color: #000000;
-}
-
-.hamburger-inner:after {
-  background-color: #000000;
-}
-
-.hamburger .is-active .hamburger-inner {
-  background-color: #000000;
-
-  &:after,
-  &:before {
-    background-color: #000000;
-  }
-}
-
-.hamburger .is-active .hamburger-inner:before {
-  background-color: #000000;
-}
-
-.hamburger .is-active .hamburger-inner:after {
-  background-color: #000000;
-}
-/* //change size */
-.hamburger {
-  transform: scale(0.7);
 }
