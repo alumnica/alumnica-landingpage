@@ -249,7 +249,7 @@ p {
 }
 
 .form-control:focus {
-  border-color: $gray-600;
+  border-color: $gray-600 ;
 }
 
 .focused .inside-label {
@@ -261,7 +261,7 @@ p {
   border-color: transparent;
 
   &:focus {
-    border-color: transparent;
+    border-color: $gray-800;
   }
 
   &::-webkit-input-placeholder {

@@ -579,7 +579,7 @@ p {
 .inline-btn {
   border-color: transparent; }
   .inline-btn:focus {
-    border-color: transparent; }
+    border-color: #343a40; }
   .inline-btn::-webkit-input-placeholder {
     font-variant: small-caps; }
   .inline-btn:-moz-placeholder {
