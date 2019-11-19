@@ -60,3 +60,37 @@
     // End of use strict
   });
 })(jQuery, window, document);
+
+function send_suscriber(){
+  console.log("in suscribe")
+
+  fetch('http://127.0.0.1:8000/contacts/suscriber/', {
+  	method: 'post',
+    headers: new Headers({
+		'Content-Type': 'application/json',
+    'Accept': 'application/json'
+    }),
+  	body: JSON.stringify({
+  		email: document.getElementById('email_suscriber').value,
+  	})
+  });
+}
+
+function send_contact(){
+  console.log("in contact")
+
+  fetch('http://127.0.0.1:8000/contacts/contact/', {
+  	method: 'post',
+    headers: new Headers({
+		'Content-Type': 'application/json',
+    'Accept': 'application/json'
+    }),
+  	body: JSON.stringify({
+      name: document.getElementById('nombre').value,
+  		email: document.getElementById('email').value,
+      phone: document.getElementById('telefono').value,
+      msg: document.getElementById('mensaje').value,
+
+  	})
+  });
+}
