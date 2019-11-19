@@ -7,7 +7,8 @@
       var hamburger = $(".hamburger");
 
       hamburger.click(function() {
-        $(this).toggleClass("is-active");
+        $('#mobileMenu').collapse('toggle')
+        $(this).toggleClass("is-active")
       });
     })
 
