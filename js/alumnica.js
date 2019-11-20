@@ -84,7 +84,7 @@
 
       let email = $("#email_suscriber").val()
 
-      fetch("http://landing.alumnica.org/contacts/suscriber/", {
+      fetch("https://landing.alumnica.org/contacts/suscriber/", {
         method: "post",
         headers: new Headers({
           "Content-Type": "application/json",
