@@ -74,24 +74,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="container force-fluid-md hero-landing position-relative">
-    <div class="position-absolute" style="right:50%;">
-      <picture>
-        <source media="(min-width: 992px)" srcset="./img/img_hero_landing.png" />
-        <img style="height:auto;width:80%" src="./img/img_hero_landing.png" class="img-fluid responsive" alt="Contextualizando la planeación." />
-      </picture>
-    </div>
-    <div class="row h-100 justify-content-end align-items-center">
-      <div class="pt-5 col-12 text-center text-md-right">
-        <h1 class="display-5 hero-title">Elige aprender</h1>
-        <p>
-          <a class="btn btn-hero" href="#" role="button">REGÍSTRATE</a>
-        </p>
-      </div>
-    </div>
-  </div> -->
-  <!-- Hero END -->
-
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
@@ -165,13 +147,14 @@
           Mantente al día con las últimas noticias, desarrollos y nuevas
           clases de Alúmnica.
         </p>
+        <p id="success_subscriber" class="d-none">¡Gracias!</p>
       </div>
-      <div class="col-12 col-md-6 position-absolute half-bottom">
+      <div id="subscribe_form" class="col-12 col-md-6 position-absolute half-bottom">
         <form>
           <div class="input-group form-group mb-3">
             <input type="text" id="email_suscriber" class="form-control shadow-none inline-btn input-styling" placeholder="tu email:" aria-label="Tu email" aria-describedby="button-addon2" />
             <div class="input-group-append">
-              <button class="btn btn-boletin" type="button" id="button-addon2" onclick="send_suscriber()">
+              <button class="btn btn-boletin" type="button" id="subscriber_button" onclick="send_suscriber()">
                 subscribirse
               </button>
             </div>
@@ -180,7 +163,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Footer -->
   <div id="footer"></div>

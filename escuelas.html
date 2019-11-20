@@ -235,9 +235,9 @@
           <div class="col-11 col-md-10 col-lg-8 py-2 text-center text-md-left">
             <h3>Laboratorio social</h3>
             <p>
-              ¡Tu comunidad te necesita! Idea soluciones para transformar tu comunidad explorando nuevas
-              formas de crear, interpretar, cuestionar, transformar y
-              compartir tu conocimiento.
+              ¡Tu comunidad te necesita! Idea soluciones para transformar tu
+              comunidad explorando nuevas formas de crear, interpretar,
+              cuestionar, transformar y compartir tu conocimiento.
             </p>
           </div>
         </div>
@@ -248,8 +248,10 @@
           <div class="col-11 col-md-10 col-lg-8 py-2 text-center text-md-left">
             <h3>Asumiendo el poder</h3>
             <p>
-              ¿Quién es responsable de que yo aprenda?
-              Potencializa tus habilidades integrando estrategias y técnicas de estudio que se adecúen a tus necesidades e intereses para que construyas aprendizajes significativos.
+              ¿Quién es responsable de que yo aprenda? Potencializa tus
+              habilidades integrando estrategias y técnicas de estudio que se
+              adecúen a tus necesidades e intereses para que construyas
+              aprendizajes significativos.
             </p>
           </div>
         </div>
@@ -269,7 +271,7 @@
           te presentaremos más información y el plan ideal para tu escuela.
         </p>
       </div>
-      <div class="col-12 pb-5">
+      <div id="contact_form" class="col-12 pb-5">
         <form>
           <div class="form-row">
             <div class="form-group col-md-4 position-relative">
@@ -290,11 +292,17 @@
             <textarea class="form-control shadow-none input-styling" id="mensaje" aria-label="escriba su mensaje" aria-describedby="button-addon2" rows="6"></textarea>
           </div>
           <p class="text-center pb-5">
-            <button type="button" class="btn btn-escuelas" onclick="send_contact()" role="button">
+            <button id="contact_button" type="button" class="btn btn-escuelas" role="button">
               ENVIAR
             </button>
           </p>
         </form>
+
+      </div>
+      <div class="col-12 pb-5 text-center d-none" id="success_contact">
+        <h3 class="pb-5">
+          Pronto nos pondremos en contacto.
+        </h3>
       </div>
     </div>
   </div>
