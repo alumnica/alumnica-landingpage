@@ -57,7 +57,7 @@
       let phone = $("#telefono").val();
       let msg = $("#mensaje").val();
 
-      fetch("http://127.0.0.1:8000/contacts/contact/", {
+      fetch("https://landing.alumnica.org/contacts/contact/", {
         method: "post",
         headers: new Headers({
           "Content-Type": "application/json",
@@ -84,7 +84,7 @@
 
       let email = $("#email_suscriber").val()
 
-      fetch("http://127.0.0.1:8000/contacts/suscriber/", {
+      fetch("http://landing.alumnica.org/contacts/suscriber/", {
         method: "post",
         headers: new Headers({
           "Content-Type": "application/json",
