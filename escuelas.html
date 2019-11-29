@@ -271,28 +271,42 @@
           te presentaremos más información y el plan ideal para tu escuela.
         </p>
       </div>
-      <div id="contact_form" class="col-12 pb-5">
+      <div id="contact_form" class="validate-form failed col-12 pb-5">
         <form>
           <div class="form-row">
             <div class="form-group col-md-4 position-relative">
-              <label class="inside-label" for="nombre">nombre</label>
-              <input type="text" id="nombre" class="form-control shadow-none input-styling" aria-label="nombre" aria-describedby="button-addon2" />
+              <label class="inside-label" for="nombre">nombre*</label>
+              <input type="text" id="nombre" class="string-validation form-control shadow-none input-styling" aria-label="nombre" aria-describedby="button-addon2" />
+              <div class="invalid-feedback">
+                Por favor, escribe tu nombre.
+              </div>
             </div>
             <div class="form-group col-md-4 position-relative">
-              <label class="inside-label" for="email">email</label>
-              <input type="text" id="email" class="form-control shadow-none input-styling" aria-label="email" aria-describedby="button-addon2" />
+              <label class="inside-label" for="email">email*</label>
+              <input type="text" id="email" class="email-validation form-control shadow-none input-styling" aria-label="email" aria-describedby="button-addon2" />
+              <div class="invalid-feedback">
+                Por favor, escribe un email válido.
+              </div>
             </div>
             <div class="form-group col-md-4 position-relative">
               <label class="inside-label" for="telefono">teléfono</label>
-              <input type="text" id="telefono" class="form-control shadow-none input-styling" aria-label="Tu email" aria-describedby="button-addon2" />
+              <input type="text" id="telefono" class="phone-validation form-control shadow-none input-styling" aria-label="Tu email" aria-describedby="button-addon2" />
+              <div class="invalid-feedback">
+                Por favor, escribe un teléfono válido.
+              </div>
             </div>
           </div>
           <div class="form-group position-relative">
-            <label class="inside-label text-area" for="mensaje">escriba su mensaje</label>
-            <textarea class="form-control shadow-none input-styling" id="mensaje" aria-label="escriba su mensaje" aria-describedby="button-addon2" rows="6"></textarea>
+            <label class="inside-label text-area" for="mensaje">escribe tu mensaje*</label>
+            <textarea class="string-validation form-control shadow-none input-styling" id="mensaje" aria-label="escriba su mensaje" aria-describedby="button-addon2" rows="6"></textarea>
+
+            <div class="invalid-feedback">
+              Por favor, escribe tu mensaje.
+            </div>
+            <small class="small-caps form-text text-muted">*campos requeridos</small>
           </div>
           <p class="text-center pb-5">
-            <button id="contact_button" type="button" class="btn btn-escuelas" role="button">
+            <button id="contact_button" type="submit" class="btn btn-escuelas" role="button">
               ENVIAR
             </button>
           </p>

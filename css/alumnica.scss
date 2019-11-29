@@ -253,7 +253,7 @@ p {
 }
 
 .focused .inside-label {
-  transform: translateY(-120%);
+  transform: translateY(-130%);
   font-size: 0.8em;
 }
 
@@ -350,6 +350,9 @@ $hero-landing-height: 65vh;
 
 .half-bottom {
   bottom: -2.4rem;
+}
+.warning {
+  bottom: -1.5rem;
 }
 /* ----------------------------------------- ESCUELAS */
 //HERO
