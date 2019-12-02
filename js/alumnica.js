@@ -51,7 +51,6 @@
     function string_validation(ele) {
       let inputValue = ele.val();
       let form = ele.parents(".validate-form");
-      form.removeClass("failed");
 
       let prevent_xss_attack = /[\<\>\&]/;
 
@@ -60,13 +59,13 @@
         form.addClass("failed");
       } else {
         ele.removeClass("is-invalid");
+        form.removeClass("failed");
       }
     }
 
     function email_validation(ele) {
       let inputValue = ele.val();
       let form = ele.parents(".validate-form");
-      form.removeClass("failed");
 
       let valid_email_regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -75,6 +74,27 @@
         form.addClass("failed");
       } else {
         ele.removeClass("is-invalid");
+        form.removeClass("failed");
+      }
+    }
+
+    function phone_validation(ele) {
+      let inputValue = ele.val();
+      let form = ele.parents(".validate-form");
+
+      let valid_mex_tel_regex = /^(\(\+?\d{2,3}\)[\*|\s|\-|\.]?(([\d][\*|\s|\-|\.]?){6})(([\d][\s|\-|\.]?){2})?|(\+?[\d][\s|\-|\.]?){8}(([\d][\s|\-|\.]?){2}(([\d][\s|\-|\.]?){2})?)?)$/;
+
+      if (!valid_mex_tel_regex.test(inputValue)) {
+        $(this).addClass("is-invalid");
+        form.addClass("failed");
+      } else {
+        $(this).removeClass("is-invalid");
+        form.removeClass("failed");
+      }
+
+      if (inputValue === "") {
+        $(this).removeClass("is-invalid");
+        form.removeClass("failed");
       }
     }
 
@@ -90,21 +110,7 @@
 
     //Phone InputValidation
     $(".phone-validation").blur(function() {
-      let inputValue = $(this).val();
-      let form = $("#contact_form");
-      form.removeClass("failed");
-      let valid_mex_tel_regex = /^(\(\+?\d{2,3}\)[\*|\s|\-|\.]?(([\d][\*|\s|\-|\.]?){6})(([\d][\s|\-|\.]?){2})?|(\+?[\d][\s|\-|\.]?){8}(([\d][\s|\-|\.]?){2}(([\d][\s|\-|\.]?){2})?)?)$/;
-
-      if (!valid_mex_tel_regex.test(inputValue)) {
-        $(this).addClass("is-invalid");
-        form.addClass("failed");
-      } else {
-        $(this).removeClass("is-invalid");
-      }
-
-      if (inputValue === "") {
-        $(this).removeClass("is-invalid");
-      }
+      phone_validation($(this));
     });
 
     //contact_form
@@ -119,6 +125,7 @@
       let phone = $("#telefono");
       let msg = $("#mensaje");
 
+      phone_validation(phone);
       string_validation(name);
       string_validation(msg);
       email_validation(email);
@@ -150,12 +157,11 @@
 
     //subscriber_form
     $("#subscriber_button").click(function(e) {
-      console.log("in suscribe");
       e.preventDefault();
       e.stopPropagation();
 
-      let form = $("#subscribe_form");
-      let email = $("#email_suscriber");
+      let form = $("#subscriber_form");
+      let email = $("#email_subscriber");
 
       email_validation(email);
 
