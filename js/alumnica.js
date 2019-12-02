@@ -93,7 +93,6 @@
       let inputValue = $(this).val();
       let form = $("#contact_form");
       form.removeClass("failed");
-
       let valid_mex_tel_regex = /^(\(\+?\d{2,3}\)[\*|\s|\-|\.]?(([\d][\*|\s|\-|\.]?){6})(([\d][\s|\-|\.]?){2})?|(\+?[\d][\s|\-|\.]?){8}(([\d][\s|\-|\.]?){2}(([\d][\s|\-|\.]?){2})?)?)$/;
 
       if (!valid_mex_tel_regex.test(inputValue)) {
@@ -174,7 +173,6 @@
 
         $("#success_subscriber").toggleClass("d-none");
         form.toggleClass("d-none");
-
       } else {
         return false;
       }
