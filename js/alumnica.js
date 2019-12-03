@@ -113,75 +113,94 @@
       phone_validation($(this));
     });
 
-    //contact_form
-    $("#contact_button").click(function(e) {
-      e.preventDefault();
-      e.stopPropagation();
+    grecaptcha.ready(function() {
+      grecaptcha
+        .execute("6LclusUUAAAAANO56AoEnuqIlXdFFbLiOi8Y5QCj", {
+          action: "subscriber"
+        })
+        .then(function(token) {
+          //subscriber_form
+          $("#subscriber_button").click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-      let form = $("#contact_form");
+            let form = $("#subscriber_form");
+            let email = $("#email_subscriber");
 
-      let name = $("#nombre");
-      let email = $("#email");
-      let phone = $("#telefono");
-      let msg = $("#mensaje");
+            email_validation(email);
 
-      phone_validation(phone);
-      string_validation(name);
-      string_validation(msg);
-      email_validation(email);
-
-      if (!form.hasClass("failed")) {
-        fetch("http://127.0.0.1:8000/contacts/contact/", {
-          method: "post",
-          headers: new Headers({
-            "Content-Type": "application/json",
-            Accept: "application/json"
-          }),
-          body: JSON.stringify({
-            name: name.val(),
-            email: email.val(),
-            phone: phone.val(),
-            msg: msg.val()
-          })
+            if (!form.hasClass("failed")) {
+              fetch("http://127.0.0.1:8000/contacts/suscriber/", {
+                method: "post",
+                headers: new Headers({
+                  "Content-Type": "application/json",
+                  Accept: "application/json"
+                }),
+                body: JSON.stringify({
+                  email: email.val(),
+                  token
+                })
+              });
+              console.log({
+                email: email.val(),
+                token
+              });
+              $("#success_subscriber").toggleClass("d-none");
+              form.toggleClass("d-none");
+            } else {
+              return false;
+            }
+          });
         });
 
-        $("#success_contact").toggleClass("d-none");
-        $(
-          "<h3>¡Muchas gracias por tu interés " + name.val() + "!</h3>"
-        ).prependTo("#success_contact");
-        form.toggleClass("d-none");
-      } else {
-        return false;
-      }
-    });
+      grecaptcha
+        .execute("6LclusUUAAAAANO56AoEnuqIlXdFFbLiOi8Y5QCj", {
+          action: "contact"
+        })
+        .then(function(token) {
+          //contact_form
+          $("#contact_button").click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-    //subscriber_form
-    $("#subscriber_button").click(function(e) {
-      e.preventDefault();
-      e.stopPropagation();
+            let form = $("#contact_form");
 
-      let form = $("#subscriber_form");
-      let email = $("#email_subscriber");
+            let name = $("#nombre");
+            let email = $("#email");
+            let phone = $("#telefono");
+            let msg = $("#mensaje");
 
-      email_validation(email);
+            phone_validation(phone);
+            string_validation(name);
+            string_validation(msg);
+            email_validation(email);
 
-      if (!form.hasClass("failed")) {
-        fetch("http://127.0.0.1:8000/contacts/suscriber/", {
-          method: "post",
-          headers: new Headers({
-            "Content-Type": "application/json",
-            Accept: "application/json"
-          }),
-          body: JSON.stringify({
-            email: email.val()
-          })
+            if (!form.hasClass("failed")) {
+              fetch("http://127.0.0.1:8000/contacts/contact/", {
+                method: "post",
+                headers: new Headers({
+                  "Content-Type": "application/json",
+                  Accept: "application/json"
+                }),
+                body: JSON.stringify({
+                  name: name.val(),
+                  email: email.val(),
+                  phone: phone.val(),
+                  msg: msg.val(),
+                  token
+                })
+              });
+
+              $("#success_contact").toggleClass("d-none");
+              $(
+                "<h3>¡Muchas gracias por tu interés " + name.val() + "!</h3>"
+              ).prependTo("#success_contact");
+              form.toggleClass("d-none");
+            } else {
+              return false;
+            }
+          });
         });
-
-        $("#success_subscriber").toggleClass("d-none");
-        form.toggleClass("d-none");
-      } else {
-        return false;
-      }
     });
 
     // End of use strict

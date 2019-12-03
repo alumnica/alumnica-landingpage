@@ -34,8 +34,13 @@
   <!-- Bootstrap core JavaScript -->
   <script src="assets/jquery/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
   <!-- Plugin JavaScript -->
   <script src="assets/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- reCAPTCH V3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LclusUUAAAAANO56AoEnuqIlXdFFbLiOi8Y5QCj"></script>
+
   <!-- Custom JavaScript for portal -->
   <script src="js/alumnica.js"></script>
 </head>
@@ -304,14 +309,19 @@
             <div class="invalid-feedback">
               Por favor, escribe tu mensaje.
             </div>
+            <small class="form-text text-center text-muted text-more-muted">This site is protected by reCAPTCHA and the Google
+              <a href="https://policies.google.com/privacy">Privacy Policy</a>
+              and
+              <a href="https://policies.google.com/terms">Terms of Service</a>
+              apply.</small>
           </div>
+
           <p class="text-center pb-5">
             <button id="contact_button" type="submit" class="btn btn-escuelas" role="button">
               ENVIAR
             </button>
           </p>
         </form>
-
       </div>
       <div class="col-12 pb-5 text-center d-none" id="success_contact">
         <h3 class="pb-5">
