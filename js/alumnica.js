@@ -130,7 +130,7 @@
             email_validation(email);
 
             if (!form.hasClass("failed")) {
-              fetch("http://127.0.0.1:8000/contacts/suscriber/", {
+              fetch("https://landing.alumnica.org/contacts/suscriber/", {
                 method: "post",
                 headers: new Headers({
                   "Content-Type": "application/json",
@@ -176,7 +176,7 @@
             email_validation(email);
 
             if (!form.hasClass("failed")) {
-              fetch("http://127.0.0.1:8000/contacts/contact/", {
+              fetch("https://landing.alumnica.org/contacts/contact/", {
                 method: "post",
                 headers: new Headers({
                   "Content-Type": "application/json",
