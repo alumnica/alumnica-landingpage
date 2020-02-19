@@ -418,7 +418,7 @@ $hero-escuelas-height: 45vh;
   background-color: transparent;
 
   .img-wrapper-md {
-    right: 8%;
+    right: 5%;
     bottom: -8vh;
 
     img {
@@ -426,14 +426,14 @@ $hero-escuelas-height: 45vh;
       width: auto;
     }
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       img {
-        height: $hero-escuelas-height - 5vh;
+        height: $hero-escuelas-height + 3vh;
         width: auto;
       }
 
-      right: 6%;
-      bottom: -4vh;
+      right: 2%;
+      bottom: -8vh;
     }
 
     @include media-breakpoint-down(sm) {
@@ -651,33 +651,10 @@ $hero-notas-height: 65vh;
       width: auto;
     }
 
+    @include media-breakpoint-down(md) {
+    }
+
     @include media-breakpoint-down(sm) {
-      display: none;
-    }
-  }
-
-  .img-wrapper-mobile-l {
-    right: 0;
-    bottom: 5rem;
-
-    img {
-      height: $hero-notas-height * 0.6;
-      width: auto;
-    }
-    @include media-breakpoint-up(md) {
-      display: none;
-    }
-  }
-
-  .img-wrapper-mobile-r {
-    right: 0;
-    top: 5rem;
-
-    img {
-      height: $hero-notas-height * 0.4;
-      width: auto;
-    }
-    @include media-breakpoint-up(md) {
       display: none;
     }
   }

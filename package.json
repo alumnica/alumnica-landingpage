@@ -11,7 +11,7 @@
     "Diego Cevallos (https://www.linkedin.com/in/dcevallosp/)"
   ],
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.4.1",
     "emailjs-com": "^2.3.2",
     "gulp": "^3.9.1",
     "hamburgers": "^1.1.3",
