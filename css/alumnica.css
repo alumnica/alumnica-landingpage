@@ -440,10 +440,13 @@ p {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
   .rotate.landing {
     left: -40%;
-    top: 45%; }
+    top: 35%; }
   .rotate.contextualizando {
     left: -40%;
     top: 24%; }
+  .rotate.notas {
+    right: -40%;
+    top: 38%; }
   @media (max-width: 1199.98px) {
     .rotate.contextualizando {
       left: -39.2%;
@@ -792,3 +795,41 @@ img.servicios {
 
 p.point8em {
   font-size: 0.65em; }
+
+/* ----------------------------------------- NOTAS TECNICAS */
+a.nota-materia {
+  color: #343a40;
+  font-variant: small-caps;
+  font-size: 1rem;
+  letter-spacing: 0.15rem; }
+
+.hero-notas {
+  background-image: linear-gradient(to right top, #66ff99, #00f2ba, #00e2d2, #00d0de, #19bddd);
+  height: 65vh;
+  background-color: transparent; }
+  .hero-notas .img-wrapper-md {
+    right: 0rem; }
+    .hero-notas .img-wrapper-md img {
+      height: 65vh;
+      width: auto; }
+    @media (max-width: 767.98px) {
+      .hero-notas .img-wrapper-md {
+        display: none; } }
+  .hero-notas .img-wrapper-mobile-l {
+    right: 0;
+    bottom: 5rem; }
+    .hero-notas .img-wrapper-mobile-l img {
+      height: 39vh;
+      width: auto; }
+    @media (min-width: 768px) {
+      .hero-notas .img-wrapper-mobile-l {
+        display: none; } }
+  .hero-notas .img-wrapper-mobile-r {
+    right: 0;
+    top: 5rem; }
+    .hero-notas .img-wrapper-mobile-r img {
+      height: 26vh;
+      width: auto; }
+    @media (min-width: 768px) {
+      .hero-notas .img-wrapper-mobile-r {
+        display: none; } }

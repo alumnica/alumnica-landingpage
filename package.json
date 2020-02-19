@@ -7,7 +7,8 @@
   "license": "GPL",
   "author": "Alumnica ORG",
   "contributors": [
-    "Abraham Mtz (https://www.linkedin.com/in/amrz1985/)","Diego Cevallos (https://www.linkedin.com/in/dcevallosp/)"
+    "Abraham Mtz (https://www.linkedin.com/in/amrz1985/)",
+    "Diego Cevallos (https://www.linkedin.com/in/dcevallosp/)"
   ],
   "dependencies": {
     "bootstrap": "^4.1.1",
@@ -18,7 +19,7 @@
     "jquery.easing": "^1.4.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
   }

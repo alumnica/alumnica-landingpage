@@ -153,12 +153,17 @@ p {
 
   &.landing {
     left: -40%;
-    top: 45%;
+    top: 35%;
   }
 
   &.contextualizando {
     left: -40%;
     top: 24%;
+  }
+
+  &.notas {
+    right: -40%;
+    top: 38%;
   }
   @include media-breakpoint-down(lg) {
     &.contextualizando {
@@ -614,4 +619,66 @@ img.servicios {
 
 p.point8em {
   font-size: 0.65em;
+}
+
+/* ----------------------------------------- NOTAS TECNICAS */
+a.nota-materia {
+  color: $gray-800;
+  font-variant: small-caps;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+}
+
+$hero-notas-height: 65vh;
+
+.hero-notas {
+  background-image: linear-gradient(
+    to right top,
+    #66ff99,
+    #00f2ba,
+    #00e2d2,
+    #00d0de,
+    #19bddd
+  );
+  height: $hero-notas-height;
+  background-color: transparent;
+
+  .img-wrapper-md {
+    right: 0rem;
+
+    img {
+      height: $hero-notas-height ;
+      width: auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  .img-wrapper-mobile-l {
+    right: 0;
+    bottom: 5rem;
+
+    img {
+      height: $hero-notas-height * 0.6;
+      width: auto;
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  .img-wrapper-mobile-r {
+    right: 0;
+    top: 5rem;
+
+    img {
+      height: $hero-notas-height * 0.4;
+      width: auto;
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
 }
