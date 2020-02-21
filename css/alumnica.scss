@@ -436,6 +436,16 @@ $hero-escuelas-height: 45vh;
       bottom: -8vh;
     }
 
+    @include media-breakpoint-down(lg) {
+      img {
+        height: $hero-escuelas-height - 4vh;
+        width: auto;
+      }
+
+      right: 1%;
+      bottom: -6vh;
+    }
+
     @include media-breakpoint-down(sm) {
       display: none;
     }
@@ -652,6 +662,20 @@ $hero-notas-height: 65vh;
     }
 
     @include media-breakpoint-down(md) {
+      img {
+        height: $hero-notas-height * 0.78 ;
+        width: auto;
+      }
+      bottom: 4.5rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+      img {
+        height: $hero-notas-height * 0.78 ;
+        width: auto;
+      }
+      bottom: 50%;
+      margin-bottom: - $hero-notas-height * 0.4
     }
 
     @include media-breakpoint-down(sm) {

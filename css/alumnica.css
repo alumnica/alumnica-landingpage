@@ -671,6 +671,13 @@ p {
         .hero-escuelas .img-wrapper-md img {
           height: 48vh;
           width: auto; } }
+    @media (max-width: 1199.98px) {
+      .hero-escuelas .img-wrapper-md {
+        right: 1%;
+        bottom: -6vh; }
+        .hero-escuelas .img-wrapper-md img {
+          height: 41vh;
+          width: auto; } }
     @media (max-width: 767.98px) {
       .hero-escuelas .img-wrapper-md {
         display: none; } }
@@ -814,6 +821,19 @@ a.nota-materia {
     .hero-notas .img-wrapper-md img {
       height: 65vh;
       width: auto; }
+    @media (max-width: 991.98px) {
+      .hero-notas .img-wrapper-md {
+        bottom: 4.5rem; }
+        .hero-notas .img-wrapper-md img {
+          height: 50.7vh;
+          width: auto; } }
+    @media (max-width: 1199.98px) {
+      .hero-notas .img-wrapper-md {
+        bottom: 50%;
+        margin-bottom: -26vh; }
+        .hero-notas .img-wrapper-md img {
+          height: 50.7vh;
+          width: auto; } }
     @media (max-width: 767.98px) {
       .hero-notas .img-wrapper-md {
         display: none; } }
