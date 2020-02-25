@@ -9,8 +9,8 @@
       var hamburger = $(".hamburger");
 
       hamburger.click(function() {
-        $("#mobileMenu").collapse("toggle");
         $(this).toggleClass("is-active");
+        $("#mobileMenu").collapse("toggle");
       });
     });
 
