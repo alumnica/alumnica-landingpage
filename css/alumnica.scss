@@ -478,7 +478,7 @@ $hero-escuelas-height: 45vh;
   background: white;
   background-image: linear-gradient(
     to right top,
-    #ccff8d,
+    $alumnica-green,
     #00ebb1,
     #00cbed,
     #00a1ff,
@@ -623,7 +623,7 @@ img.servicios {
 }
 
 .footer {
-  background-color: #ccff8d;
+  background-color: $alumnica-green;
   min-height: 35vh;
 }
 

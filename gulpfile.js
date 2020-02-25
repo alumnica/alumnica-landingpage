@@ -39,16 +39,16 @@ gulp.task("sass", function() {
 });
 
 // Default task
-gulp.task("default", ["assets"]);
+gulp.task("default", gulp.series("assets"));
 
 // Configure the browserSync task
-gulp.task("browserSync", function() {
+gulp.task("browserSync",  function() {
   browserSync.init({
     server: {
       baseDir: "./"
     }
   });
-  gulp.watch("./css/*.scss", ["sass"]);
+  gulp.watch("./css/*.scss", gulp.series("sass"));
   gulp.watch("./css/*.css").on("change", browserSync.reload);
   gulp.watch("./css/*.scss").on("change", browserSync.reload);
   gulp.watch("./js/*.js").on("change", browserSync.reload);
@@ -56,4 +56,4 @@ gulp.task("browserSync", function() {
 });
 
 // Dev task
-gulp.task("dev", ["browserSync"]);
+gulp.task("dev", gulp.series("browserSync"));
